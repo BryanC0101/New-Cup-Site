@@ -99,32 +99,6 @@
     },
 
     {
-        "id": 6,
-        "titulo": "Conheça mais sobre Johnny Schorros",
-        "data": "11 ago 2026",
-        "imagem": "/images/noticias/johhnyfoto.png",
-        "resumo": "Em sua primeiro copa de sua curta carreira, Cláusio Goodbarras é condecorado com a bola de ouro",
-        "subtitulo": "",
-        "paragrafos": [
-            "",
-            ""
-        ]
-    },
-
-    {
-        "id": 7,
-        "titulo": "Quem é o estreante, filho de Cláudio Goodbarras, a ganhar a Copa do Mundo?",
-        "data": "11 ago 2026",
-        "imagem": "/images/noticias/clausiobarras.png",
-        "resumo": "Em sua primeiro copa de sua curta carreira, Cláusio Goodbarras é condecorado com a bola de ouro",
-        "subtitulo": "",
-        "paragrafos": [
-            "",
-            ""
-        ]
-    },
-
-    {
         "id": 8,
         "titulo": "Entrevista exclusiva com Johnny Schorros",
         "data": "12 ago 2026",
