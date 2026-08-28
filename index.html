@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/logoSite.png">
     <title>New World Cup</title>
 </head>
+
 <body>
+
+    <!-- FAZER CONTADOR DE TEMPO PARA A PRÓXIMA COPA -->
     <nav>
-        <img src="/images/logoSite.png" alt="Logo">
+        <a href="/index.html">
+            <img src="/images/logoSite.png" alt="Logo">
+        </a>
         <div class="centralOptions">
             <h1>Estatísticas</h1>
             <h1>Notícias</h1>
@@ -21,8 +30,8 @@
             <h1>Loja</h1>
         </div>
         <div class="rightSide-user">
-            <h1>Busca</h1>
-            <h1>Usuario</h1>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
         </div>
     </nav>
     <main>
@@ -76,7 +85,8 @@
                     <img src="/images/noticias/GibraltarPerdendo.png" alt="NEWS2">
                     <div class="infoNewsOthers">
                         <h2>COPA DO MUNDO</h2>
-                        <h1>San Marino cai para Gibraltar nas oitavas de final, mas Gibraltar também cai, para o Uruguai</h1>
+                        <h1>San Marino cai para Gibraltar nas oitavas de final, mas Gibraltar também cai, para o Uruguai
+                        </h1>
                         <p>6 de Agosto, 2026</p>
                     </div>
                 </div>
@@ -90,12 +100,12 @@
         </div>
 
         <div class="imagesPhotos">
-            <h1>Fotos</h1>
+            <h1>Fotos das Copas</h1>
             <div class="cardImages">
                 <img src="/images/noticias/johnnyeclausio.png" alt="">
-                <img src="/images/noticias/johnnyeclausio.png" alt="">
-                <img src="/images/noticias/johnnyeclausio.png" alt="">
-                <img src="/images/noticias/johnnyeclausio.png" alt="">
+                <img src="/images/noticias/moldavaCampea.png" alt="">
+                <img src="/images/noticias/tetraSanMarino.png" alt="">
+                <img src="/images/noticias/clausioBoladeouro.png" alt="">
             </div>
         </div>
 
@@ -105,9 +115,8 @@
             </video>
         </div>
 
-
         <div class="lojaCards">
-            
+            <h1>Loja</h1>
             <div class="leftSideStore">
                 <div class="leftImageStore">
                     <button>Novas Decorações</button>
@@ -117,8 +126,31 @@
                 <div class="upSideStore">
                     <button>Novas Camisas</button>
                 </div>
+                <div class="downSide">
+                    <div class="downLeftSideStore">
+                        <button>Novas Blusas</button>
+                    </div>
+                    <div class="downRightSideStore">
+                        <button>Novos Acessórios</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <footer>
+            <div class="textFooter">
+                <h2>Andrey Malakovitch Djangovsky</h2>
+
+                <div class="siteStates">
+                    <h2>San Marino</h2>
+                    <h2>Gibraltar</h2>
+                    <h2>Laos</h2>
+                </div>
+
+                <h2>MCMXCVIII</h2>
+            </div>
+        </footer>
+
 
 
     </main>
@@ -126,4 +158,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

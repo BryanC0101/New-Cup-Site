@@ -54,6 +54,24 @@ nav h1:hover {
     background-color: rgba(214, 214, 214, 0.13);
 }
 
+.rightSide-user {
+    display: flex;
+    gap: 25px;
+}
+
+.rightSide-user i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.rightSide-user i:hover {
+    color: #aaa;
+    background-color: rgba(214, 214, 214, 0.13);
+}
 
 body {
     background-color: rgb(0, 0, 0);
@@ -82,11 +100,9 @@ body {
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(
-        to bottom,
-        transparent 50%,
-        black 100%
-    );
+    background: linear-gradient(to bottom,
+            transparent 50%,
+            black 100%);
 
     pointer-events: none;
 }
@@ -152,13 +168,14 @@ main {
     cursor: pointer;
     transition: 0.4s ease;
     padding-bottom: 40px;
+    border-radius: 10px;
 }
 
 .cardLeft:hover {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
-.cardLeft img{
+.cardLeft img {
     width: 600px;
 }
 
@@ -217,28 +234,23 @@ main {
 
 .cardVideo {
     overflow: hidden;
-    
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 70%,
-        transparent 100%
-    );
 
-    mask-image: linear-gradient(
-        to bottom,
-        black 70%,
-        transparent 100%
-    );
+    -webkit-mask-image: linear-gradient(to bottom,
+            black 70%,
+            transparent 100%);
+
+    mask-image: linear-gradient(to bottom,
+            black 70%,
+            transparent 100%);
 }
+
 .cardVideo::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to bottom,
-        transparent 50%,
-        black 100%
-    );
+    background: linear-gradient(to bottom,
+            transparent 50%,
+            black 100%);
     pointer-events: none;
 }
 
@@ -247,18 +259,18 @@ main {
     flex-direction: column;
     color: white;
     text-align: start;
-    gap: 20px;
+    gap: 40px;
     padding: 60px 0px 120px 0px;
 }
 
 .cardImages {
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 
 .cardImages img {
     width: 250px;
-    height: 350px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
     opacity: 90%;
@@ -272,30 +284,218 @@ main {
 
 .lojaCards {
     display: flex;
-    padding: 120px 0px 120px 0px;
-    background-color: rgb(26, 26, 26);
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    gap: 20px;
+
+    padding: 120px 0;
+
     position: relative;
     top: 100px;
+
+    background-color: rgb(26, 26, 26);
+
+    width: 100%;
+
+    flex-wrap: wrap;
 }
 
-.lojaCards h1{
+.lojaCards div {
+    cursor: pointer;
+    opacity: 90%;
+    transition: 0.4s ease;
+}
+
+.lojaCards div:hover {
+    opacity: 100%;
+}
+
+.lojaCards h1 {
     color: white;
+
+    width: 100%;
+    text-align: left;
+
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.leftSideStore {
+    width: 500px;
+    height: 610px;
 }
 
 .leftImageStore {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+
     background-image: url(/images/sanMarinoFigurinhas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 15px;
+
+    position: relative;
+}
+
+
+.rightUpSideStore {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 800px;
 }
 
 .upSideStore {
-    width: 800px;
+    width: 100%;
     height: 200px;
+
     background-image: url(/images/CamisasMoldavia.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 15px;
+
+    position: relative;
+}
+
+.downSide {
+    display: flex;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+.downLeftSideStore,
+.downRightSideStore {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+
+.downLeftSideStore {
+    background-color: red;
+    background-image: url(/images/blusaGibraltar.png);
+}
+
+.downRightSideStore {
+    background-color: red;
+    background-image: url(/images/acessoriosSanMarino.png);
+}
+
+.lojaCards button {
+    position: absolute;
+
+    bottom: 20px;
+    left: 20px;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: white;
+    color: #1a1a1a;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.lojaDivs {
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    text-align: start;
+}
+
+footer {
+    width: 100%;
+    padding: 60px 8% 30px;
+    background: linear-gradient(
+        to bottom,
+        #000 0%,
+        #080808 45%,
+        #111 100%
+    );
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.textFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    text-align: center;
+}
+
+.textFooter h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+.siteStates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 20px 0;
+    width: 100%;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.siteStates h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #aaa;
+
+    transition: color 0.3s ease;
+
+    cursor: pointer;
+}
+
+.siteStates h2:hover {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 45px 20px 25px;
+    }
+
+
+    .siteStates {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
