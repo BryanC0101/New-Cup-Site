@@ -23,13 +23,27 @@ window.addEventListener("scroll", () => {
 const slides = document.querySelector(".slides");
 
 let currentSlide = 0;
-const totalSlides = document.querySelectorAll(".slides img").length;
+
+const totalSlides = document.querySelectorAll(".slide").length;
 
 function goToSlide(index) {
-    slides.style.transform = `translateX(-${index * 100}%)`;
+
+    slides.style.transform =
+        `translateX(-${index * 100}%)`;
+
+    const color = getBottomColor(slideImages[index]);
+
+    backgroundEffect.style.background = `
+        linear-gradient(
+            to bottom,
+            ${color},
+            #000
+        )
+    `;
 }
 
 setInterval(() => {
+
     currentSlide++;
 
     if (currentSlide >= totalSlides) {
@@ -37,4 +51,6 @@ setInterval(() => {
     }
 
     goToSlide(currentSlide);
+
 }, 8000);
+
