@@ -53,4 +53,3 @@ setInterval(() => {
     goToSlide(currentSlide);
 
 }, 8000);
-

@@ -54,22 +54,7 @@ nav h1:hover {
     background-color: rgba(214, 214, 214, 0.13);
 }
 
-.infoImage {
-    position: absolute;
-    bottom: 50px;
-    z-index: 2;
-    color: white;
-}
 
-.infoImage h1 {
-    font-size: 48px;
-    margin: 0 0 15px;
-}
-
-.infoImage p {
-    font-size: 20px;
-    margin: 0 0 25px;
-}
 
 .newsButton {
     display: inline-block;
@@ -89,7 +74,7 @@ nav h1:hover {
 }
 
 .newsButton:hover {
-    background-color: #ddd;
+    background-color: #c0c0c0;
 }
 
 .rightSide-user {
@@ -172,6 +157,24 @@ body {
 
 #next {
     right: 20px;
+}
+
+.infoImage {
+    position: absolute;
+    bottom: 50px;
+    z-index: 2;
+    color: white;
+}
+
+
+.infoImage h1 {
+    font-size: 48px;
+    margin: 0 0 15px;
+}
+
+.infoImage p {
+    font-size: 20px;
+    margin: 0 0 25px;
 }
 
 .slides {
