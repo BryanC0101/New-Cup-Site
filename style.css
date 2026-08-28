@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 20px 40px;
+
+    font-size: 6px;
+    text-transform: uppercase;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0),
+        inset 0 1px 1px rgba(255, 255, 255, 0.25);
+
+    z-index: 9999;
+
+    transition: transform 0.35s ease;
+}
+
+nav.hidden {
+    transform: translateY(-120%);
+}
+
+nav h1 {
+    padding: 10px;
+    transition: 0.6s ease;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+nav h1:hover {
+    background-color: rgba(214, 214, 214, 0.13);
+}
+
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.centralOptions {
+    display: flex;
+    gap: 20px;
+}
+
+
+.rightSide-user {
+    display: flex;
+    gap: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        black 100%
+    );
+
+    pointer-events: none;
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 15px 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+
+    flex: 0 0 100%;
+    object-fit: cover;
+}
+
+.cardRecentNews {
+    display: flex;
+    color: white;
+    padding-bottom: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* Card de notícias principais */
+
+.cardLeft {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.096);
+    gap: 50px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    padding-bottom: 40px;
+}
+
+.cardLeft:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+.cardLeft img{
+    width: 600px;
+}
+
+.infoNews1 {
+    padding-left: 50px;
+    max-width: 500px;
+}
+
+.infoNews1 h2 {
+    font-size: 15px;
+}
+
+.infoNews1 h1 {
+    padding: 20px 0px 60px 0px;
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 20px 20px;
+    gap: 40px;
+    padding: 20px 40px 20px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    max-width: 600px;
+    max-height: 140px;
+    text-align: start;
+    transition: 0.4s ease;
+}
+
+.cards:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+.cards h1 {
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+}
+
+.cards h2 {
+    font-size: 15px;
+
+}
+
+.cards p {
+    color: gray;
+}
+
+.cards img {
+    width: 200px;
+    min-width: 200px;
+    min-height: 140px;
+    border-radius: 10px;
+}
+
+.cardVideo {
+    overflow: hidden;
+    
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 70%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 70%,
+        transparent 100%
+    );
+}
+.cardVideo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        black 100%
+    );
+    pointer-events: none;
+}
+
+.imagesPhotos {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: start;
+    gap: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+.cardImages {
+    display: flex;
+    gap: 40px;
+}
+
+.cardImages img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 90%;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.cardImages img:hover {
+    opacity: 100%;
+}
