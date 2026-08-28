@@ -248,7 +248,7 @@ main {
     color: white;
     text-align: start;
     gap: 20px;
-    padding: 20px 0px 20px 0px;
+    padding: 60px 0px 120px 0px;
 }
 
 .cardImages {
@@ -269,3 +269,33 @@ main {
 .cardImages img:hover {
     opacity: 100%;
 }
+
+.lojaCards {
+    display: flex;
+    padding: 120px 0px 120px 0px;
+    background-color: rgb(26, 26, 26);
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 100px;
+}
+
+.lojaCards h1{
+    color: white;
+}
+
+.leftImageStore {
+    width: 500px;
+    height: 500px;
+    background-image: url(/images/sanMarinoFigurinhas.png);
+}
+
+.upSideStore {
+    width: 800px;
+    height: 200px;
+    background-image: url(/images/CamisasMoldavia.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
