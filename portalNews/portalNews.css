@@ -200,3 +200,115 @@ nav h1:hover {
     }
 
 }
+
+/* ===== Responsividade ===== */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 800px) {
+    nav {
+        padding: 12px 18px;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    nav > a img {
+        width: 42px;
+        height: auto;
+    }
+
+    nav h1 {
+        padding: 7px;
+        font-size: 10px;
+    }
+
+    .centralOptions {
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rightSide-user {
+        gap: 4px;
+    }
+
+    .rightSide-user i {
+        font-size: 16px;
+        padding: 7px;
+    }
+
+    main {
+        width: calc(100% - 30px);
+        margin-top: 110px;
+    }
+
+    .titlePage {
+        font-size: 30px;
+    }
+
+    .newsList {
+        gap: 18px;
+    }
+
+    .cardNews img {
+        height: 190px;
+    }
+
+    .cardInfo {
+        padding: 16px;
+    }
+
+    .cardInfo h2 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 500px) {
+    .centralOptions {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        scrollbar-width: none;
+    }
+
+    .centralOptions::-webkit-scrollbar {
+        display: none;
+    }
+
+    .centralOptions h1 {
+        white-space: nowrap;
+    }
+
+    main {
+        width: calc(100% - 24px);
+        margin-top: 120px;
+    }
+
+    .titlePage {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .newsList {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .cardNews img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .cardInfo {
+        padding: 15px;
+    }
+
+    .cardInfo h2 {
+        font-size: 20px;
+    }
+}
